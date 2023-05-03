@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "0e2686af-385b-4f0c-8d8e-bc97c713a1ed",
+		"name": "to do list",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "8260484"
+	},
+	"item": [
+		{
+			"name": "todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/api/todo"
+			},
+			"response": []
+		},
+		{
+			"name": "post to do",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"taskName\":\"water the plant\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/todo"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"taskName\":\"water the plant 2\",\"isDone\":true}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/todo/632069330d2aa31e16c94395"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:5000/api/todo/63206e5f0d2aa31e16c94399"
+			},
+			"response": []
+		}
+	]
+}
